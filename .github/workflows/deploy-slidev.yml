@@ -35,7 +35,7 @@ jobs:
         run: npm install
 
       - name: Build Slidev presentation
-        run: npm run build -- --out docs
+        run: npm run build -- --out docs --base /commentable-for-slidev
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
